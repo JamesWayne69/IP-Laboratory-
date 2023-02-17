@@ -30,3 +30,7 @@ body {
   .tablecell {
     display: table-cell;
   }
+  .description {
+    display: table-cell;
+    height: 150px;
+  }
