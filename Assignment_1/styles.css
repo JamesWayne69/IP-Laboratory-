@@ -1,0 +1,45 @@
+img:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  .table {
+    display: table;
+  }
+  .tablerow {
+    display: table-row;
+    padding: 10px;
+  }
+  .tablecell {
+    display: table-cell;
+    padding: 10px;
+  }
+  .tablecell-b {
+    display: table-cell;
+    width:380pt;
+    margin: auto;
+  }
+  .special {
+    margin: auto;
+    width: 90%;
+    border: 10px solid rgb(59, 99, 136);
+    padding: 5px;
+  }
+
+  div.a {
+    width: 150px;
+    height: 80px;
+    margin: auto;
+    background-color: yellow;
+    animation: spin 2s linear infinite;
+  }
+  div.b {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+  }
+
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
