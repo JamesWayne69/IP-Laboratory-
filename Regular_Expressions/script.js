@@ -7,6 +7,9 @@ function validate() {
     if(flag == 0) {
         alert("Check'yer data mate");
     }
-    var name = "sad";
+    var name = /^[a-z]/;
+    if (!document.forms["myform"]["p_name"].value.match(name)) {
+        alert('Check your name');
+    }
     
 }
