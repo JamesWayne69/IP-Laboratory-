@@ -91,34 +91,62 @@
                     <th>Decription</th>
                 </tr>
                 <tr>
-                    <td>.</td>
-                    <td>Find a single character, except newline or line terminator</td>
+                    <td>n+</td>
+                    <td>Matches any string that contains at least one n</td>
                 </tr>
                 <tr>
-                    <td>\w</td>
-                    <td>Find a word character</td>
+                    <td>n*</td>
+                    <td>Matches any string that contains zero or more occurrences of n</td>
                 </tr>
                 <tr>
-                    <td>\W</td>
-                    <td>Find a non-word character</td>
+                    <td>n?</td>
+                    <td>Matches any string that contains zero or one occurrences of n</td>
                 </tr>
                 <tr>
-                    <td>\d</td>
-                    <td>Find a digit</td>
+                    <td>n{X}</td>
+                    <td>Matches any string that contains a sequence of X n's</td>
                 </tr>
                 <tr>
-                    <td>\D</td>
+                    <td>n{X,Y}</td>
                     <td>Find a non-digit character</td>
                 </tr>
                 <tr>
-                    <td>\s</td>
-                    <td>Find a whitespace character</td>
+                    <td>n{X,Y}</td>
+                    <td>Matches any string that contains a sequence of X to Y n's</td>
                 </tr>
                 <tr>
-                    <td>\S</td>
-                    <td>Find a non-whitespace character</td>
+                    <td>n$</td>
+                    <td>Matches any string with n at the end of it</td>
+                </tr>
+                <tr>
+                    <td>^n</td>
+                    <td>^n	Matches any string with n at the beginning of it</td>
                 </tr>
             </table>
+            <h2> Methods</h2>
+            <table>
+                <tr>
+                    <th>Details</th>
+                    <th>Decription</th>
+                </tr>
+                <tr>
+                    <td>text.match(pattern)</td>
+                    <td>The String method match()</td>
+                </tr>
+                <tr>
+                    <td>text.search(pattern)</td>
+                    <td>The String method search()</td>
+                </tr>
+                <tr>
+                    <td>pattern.exec(text)</td>
+                    <td>The RexExp method exec()</td>
+                </tr>
+                <tr>
+                    <td>pattern.test(text)</td>
+                    <td>The RegExp method test()</td>
+                </tr>
+            </table>
+            <h3> <a href = "Demo.html"> DEMO</a></h3>
         </div>
     </body>
 </html>
