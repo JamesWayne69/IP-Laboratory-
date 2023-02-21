@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Array Properties</title>
+    </head>
+    <body>
+        <script>
+            function checkAge(age) {
+                return age > 18;
+            }
+
+            document.writeln("<h3> Copywithin </h3>");
+            const fruits = ["Banana", "Orange", "Apple", "Mango"];
+            document.writeln(fruits.copyWithin(2, 0));
+
+            const ages = [32, 33, 16, 40];
+            document.writeln("<h3> Every </h3>");
+            document.writeln(ages.every(checkAge));
+
+            document.writeln("<h3> Some </h3>");
+            document.writeln(ages.some(checkAge));
+
+            document.writeln("<h3> Fill </h3>");
+            fruits.fill("Kiwi", 2, 4);
+            document.writeln(fruits);
+
+            document.writeln("<h3> Filter </h3>");
+            const result = ages.filter(checkAge);
+            document.writeln(result);
+
+            document.writeln("<h3> Find </h3>");
+            document.writeln(ages.find(checkAge));
+
+            document.writeln("<h3> Includes </h3>");
+            document.writeln(fruits.includes("Banana", 3));
+
+            document.writeln("<h3> Join </h3>");
+            let text = fruits.join(" and ");
+            document.writeln(text);
+
+
+
+
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script>
+      function rotateImageAntiClockWise() {
+        var myImage = document.getElementById("myImage");
+        myImage.style.transform = 'rotate(-90deg)';
+      }
+    </script>
+  </head>
+  <body>
+    <h1 align = "center">Click to rotate!</h1>
+    <div align = "center" class="special">
+      <img id="myImage" alt="rotate image using javascript" src="d1.jpg"/> <br/>
+      <button onclick="rotateImageAntiClockWise()">Rotate image Anticlockwise</button>
+    </div>
+    
+  </body>
+</html>
