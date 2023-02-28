@@ -1,4 +1,4 @@
-img:hover {
+img:hover.smooth {
     transform: scale(1.2);
     transition: transform 0.3s ease-in-out;
   }

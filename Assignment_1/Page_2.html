@@ -1,19 +1,41 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Page Title</title>
+    <title>Page-2</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script>
+      var x = 0;
       function rotateImageAntiClockWise() {
         var myImage = document.getElementById("myImage");
-        myImage.style.transform = 'rotate(-90deg)';
+        switch(x) {
+          case 0:
+          myImage.style.transform = 'rotate(-90deg)';
+          x++;
+          break;
+
+          case 1:
+          myImage.style.transform = 'rotate(-180deg)';
+          x++;
+          break;
+
+          case 2:
+          myImage.style.transform = 'rotate(-270deg)';
+          x++;
+          break;
+
+          case 3:
+          myImage.style.transform = 'rotate(0deg)';
+          x++;
+          break;
+        }
+        x = x%4;
       }
     </script>
   </head>
   <body>
     <h1 align = "center">Click to rotate!</h1>
     <div align = "center" class="special">
-      <img id="myImage" alt="rotate image using javascript" src="d1.jpg"/> <br/>
+      <img id="myImage" alt="rotate image using javascript" src="d1.jpg"/> <br/><br/><br/><br/><br/>
       <button onclick="rotateImageAntiClockWise()">Rotate image Anticlockwise</button>
     </div>
     
