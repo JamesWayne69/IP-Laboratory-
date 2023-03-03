@@ -3,3 +3,8 @@ function makesame() {
 }
 
 setInterval(makesame, 1000);
+
+function run_code() {
+    var x = document.getElementById("t1").value;
+    document.getElementById.innerHTML += "<br>" + x;
+}

@@ -13,22 +13,13 @@
     <div class="centered">
       <h2>Jane Flex</h2>
       <p>Some text.</p>
-      <input id = "t1" type = "text">
+      <textarea id = "t1" rows = 10 cols = 60 ></textarea>
+      <button type = "button" onclick = "run_code()">Submit</button>
     </div>
   </div>
   
-  <div class="split right">
-    <div class="centered">
-      <h2>John Doe</h2>
-      <p>Some text here too.</p>
-      <input id = "t2" type = "text">
-    </div>
+  <div class="split right" id = "d1">
+
   </div>
-  <script>
-    function makesame() {
-      document.getElementById("t2").innerHTML = "document.getElementById().innerHTML";
-    }
-    setInterval(makesame, 100);
-  </script>
 </body>
 </html>
