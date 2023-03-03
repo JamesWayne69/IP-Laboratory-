@@ -8,19 +8,18 @@
     <script src = "script.js"></script>
 </head>
 <body>
-    <h1>Try stuff</h1>
     <script>
         
         function myFunction(arr) {
             var out = "";
             for (var i = 0; i < arr.length; i++) {
-            out += "<h1>" + arr[i].age + "h1";
+            out += "<h1>" + arr[i].age + "<h1>";
             }
         document.writeln(out);
         } 
         var xmlhttp = new XMLHttpRequest();
         var url = "data.txt";
-        document.writeln("<h1>Try stuff</h1>");
+        
         xmlhttp.onreadystatechange =    function () {
         if (this.readyState == 4 && this.status == 200) {
             console.log(this.readState);
