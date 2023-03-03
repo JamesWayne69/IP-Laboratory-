@@ -1,5 +1,5 @@
 function makesame() {
-    document.getElementById("t2").innerHTML = document.getElementById("t1").innerHTML;
+    document.getElementById("t2").value = document.getElementById("t1").value;
 }
 
 setInterval(makesame, 1000);
