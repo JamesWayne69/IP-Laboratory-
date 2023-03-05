@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cat 13 marks</title>
-    <script src = "script.js"></script>
 </head>
 <body>
     <script>
@@ -22,11 +21,9 @@
         
         xmlhttp.onreadystatechange =    function () {
         if (this.readyState == 4 && this.status == 200) {
-            console.log(this.readState);
             var myArr = JSON.parse(this.responseText);
             myFunction(myArr);
         }};
-        document.writeln("<h1>Try stuff</h1>");
         xmlhttp.open("GET", url, true);
         xmlhttp.send();
     </script>
