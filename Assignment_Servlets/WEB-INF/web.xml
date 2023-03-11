@@ -1,0 +1,34 @@
+<web-app>
+
+    <servlet>
+        <servlet-name>Hello</servlet-name>
+        <servlet-class>HelloWorld</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Hello</servlet-name>
+        <url-pattern>/HellWorld</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Assignment_1</servlet-name>
+        <servlet-class>Simple</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Assignment_1</servlet-name>
+        <url-pattern>/Hate</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Assignment_2</servlet-name>
+        <servlet-class>Student</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Assignment_2</servlet-name>
+        <url-pattern>/Love</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>
