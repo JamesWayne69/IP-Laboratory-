@@ -1,0 +1,36 @@
+body {
+    background-color: powderblue;
+  }
+  h1 {
+    color: blue;
+    text-align: center;
+  }
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+  .special {
+    margin: auto;
+    width: 50%;
+    border: 3px solid rgb(59, 99, 136);
+    padding: 10px;
+  }
+  .container {
+    width: 500px;
+    clear: both;
+  }
+  .table {
+    display: table;
+  }
+  .tablerow {
+    display: table-row;
+  }
+  .tablecell {
+    display: table-cell;
+  }
+  .description {
+    display: table-cell;
+    height: 150px;
+  }
