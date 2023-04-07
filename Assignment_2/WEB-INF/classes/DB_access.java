@@ -14,9 +14,9 @@ public class DB_access extends HttpServlet {
              ResultSet rs = stmt.executeQuery("SELECT * FROM mytable")) {
             while (rs.next()) {
                 Row row = new Row();
-                row.setId(rs.getInt("id"));
-                row.setName(rs.getString("name"));
-                row.setEmail(rs.getString("email"));
+                row.set(rs.getInt("id"));
+                row.set(rs.getString("name"));
+                row.set(rs.getString("email"));
                 rows.add(row);
             }
         } catch (SQLException e) {
