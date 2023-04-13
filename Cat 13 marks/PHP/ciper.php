@@ -4,7 +4,7 @@
     </head>
     <body>
         <?php 
-            $plaintext = "$_GET("text")";
+            $plaintext = $_GET("text");
             $key = intval($_GET("key"));
             //$plaintext = "ABCD";
             //$key = 3;
