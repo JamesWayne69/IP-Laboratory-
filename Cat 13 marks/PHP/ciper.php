@@ -4,11 +4,8 @@
     </head>
     <body>
         <?php 
-            //$plaintext = $_GET("text");
-            //$key = intval($_GET("key"));
-            $plaintext = "ABCD";
+            $plaintext = "AbCd";
             $key = 3;
-            $cipher = "";
             for($i=0;$i<strlen($plaintext);$i++) {
                 $c = $plaintext[$i];
                 if(ctype_lower($c))
